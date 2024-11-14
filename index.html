@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>心に残る❤先祖のリアル言葉集集</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<script>
+    $("main").slideDown(500);
+    $("#save").on("click", function () {
+        alert("Save");
+
+    });
+</script>
+
+    <div class="container mt-5">
+        <h1 class="text-center">心に残る❤先祖のリアル言葉集</h1>
+
+        <!-- メモ入力フォーム -->
+        <div class="form-group">
+            <label for="ancestorWords">先祖の言葉を入力してください</label>
+            <input type="text" id="ancestorWords" class="form-control" placeholder="例：きんぱつかのみ">
+        </div>
+
+        <button class="btn btn-primary" id="addWordButton">メモを追加</button>
+<button class="btn btn-danger" id="clearListButton">リストを全削除</button>
+        <!-- メモリスト表示 -->
+        <ul class="list-group mt-4" id="wordsList"></ul>
+    </div>
+
+    <!-- jQueryとJavaScriptファイルの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
+
+
+
+
+

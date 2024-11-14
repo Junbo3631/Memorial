@@ -1,0 +1,103 @@
+/* 背景色と基本レイアウト */
+body {
+    background-color: #f3f4f6d4;
+    /* 淡いグレーの背景 */
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* タイトルスタイル */
+h1 {
+    color: #5d3fd3;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 入力フィールドのスタイル */
+#ancestorWords {
+    border: 2px solid #5d3fd3;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* 追加ボタンのスタイル */
+button.btn-primary {
+    background-color: #5d3fd3;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #7a5de0;
+    /* ホバー時の色変更 */
+}
+
+button.btn-danger {
+    background-color: #dd0813;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-danger:hover {
+    background-color: #eb666c;
+    /* ホバー時の色変更 */
+}
+/* リストアイテムのスタイル */
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* 影を追加 */
+}
+
+/* 再生ボタンのスタイル */
+button.btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-success:hover {
+    background-color: #3bcf5a;
+    /* ホバー時の色変更 */
+}
+
+/* レスポンシブ調整 */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button.btn-primary,
+    button.btn-success {
+        font-size: 0.9rem;
+    }
+}
